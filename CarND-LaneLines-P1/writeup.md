@@ -24,7 +24,7 @@ then i apply the region mask
 [image4]: test_images_intermidiate/maskedsolidWhiteCurve.jpg "Mask and region apply"
 ![alt text][image4]
 Then apply the Hough transform based on choosen parameters
-[image5]: test_images_intermidiate/line_imagessolidWhiteCurve.jpg "Hough Transformation apply"
+[image5]: test_images_intermidiate/line_imagesolidWhiteCurve.jpg "Hough Transformation apply"
 ![alt text][image5]
 Then apply line image on original using weighs to prepare final images
 [image6]: test_images_output/final_solidWhiteCurve.jpg "Final Images"
