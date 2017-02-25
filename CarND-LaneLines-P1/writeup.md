@@ -1,17 +1,10 @@
----
 
-**Finding Lane Lines on the Road**
+##Finding Lane Lines on the Road**
 
 The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-
-[//]: # (Image References)
-
-[image0]: test_images/solidWhiteCurve.jpg "Grayscale"
-![alt text][image0]
----
 
 ### Reflection
 
@@ -31,7 +24,7 @@ then i apply the region mask
 [image4]: test_images_intermidiate/maskedsolidWhiteCurve.jpg "Mask and region apply"
 ![alt text][image4]
 Then apply the Hough transform based on choosen parameters
-[image5]: test_images_intermidiate/line_solidWhiteCurve.jpg "Hough Transformation apply"
+[image5]: test_images_intermidiate/line_imagessolidWhiteCurve.jpg "Hough Transformation apply"
 ![alt text][image5]
 Then apply line image on original using weighs to prepare final images
 [image6]: test_images_output/final_solidWhiteCurve.jpg "Final Images"
