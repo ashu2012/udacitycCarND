@@ -970,43 +970,11 @@ def process_video_image(image):
 
 ```python
 video_output1 = 'project_video_output.mp4'
-video_input1 = VideoFileClip('project_video.mp4').subclip(10,20)#.subclip(22,26)
+video_input1 = VideoFileClip('project_video.mp4')#.subclip(22,26)
 video_input1.to_images_sequence("tmp_images/images%03d.jpeg")
 
 
 ```
-
-    [MoviePy] Writing frames tmp_images/images%03d.jpeg.
-
-    250it [00:06, 36.23it/s]             
-
-    [MoviePy]: Done writing frames tmp_images/images%03d.jpeg.
-    
-
-
-    
-
-
-
-
-
-    '\nfor frame in video_input1.iter_frames():\n    # now frame is a numpy array, do wathever you want\n    clip.fl_image(vertical_flip).to_images_sequence("tmp_images/images%03d.jpeg")\n    newframe = some_transformation(frame)\n    # etc.\n'
-
-
-
-
-```python
-for image in glob.glob('tmp_images/images*.jpeg'):
-    fill_lane(image)
-    break
-```
-
-    640
-    320
-    base pts: 264 1117
-    (720, 1280, 3)
-    [ -9.53976975e-06   5.59064837e-03   2.56988535e+02] [ -8.71378929e-05   3.17935267e-01   9.82439416e+02] [30375 30376 30377 ...,  4188  4189  4190] [27737 27738 27739 ..., 19571 19572 19573]
-
 
 
 ![png](output_38_1.png)
@@ -1048,7 +1016,7 @@ HTML("""
 </video>
 
 
-![youtube video](https://www.youtube.com/watch?v=tJvclm-ugGw&feature=youtu.be)
+###  ![youtube video](https://www.youtube.com/watch?v=tJvclm-ugGw&feature=youtu.be)
 
 
 ```python
@@ -1072,7 +1040,7 @@ HTML("""
 ```
 
 
-![youtube video](https://www.youtube.com/watch?v=ue0ag68ssek&feature=youtu.be)
+###  ![youtube video](https://www.youtube.com/watch?v=ue0ag68ssek&feature=youtu.be)
 
 
 <video width="640" height="360" controls>
