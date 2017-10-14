@@ -648,8 +648,9 @@ plt.ylim(720, 0)
 # based on binary image, polynomial fit, and L and R lane pixel indices
 def calc_curv_rad_and_center_dist(bin_img, l_fit, r_fit, l_lane_inds, r_lane_inds):
     # Define conversions in x and y from pixels space to meters
-    ym_per_pix = 3.048/100 # meters per pixel in y dimension, lane line is 10 ft = 3.048 meters
-    xm_per_pix = 3.7/378 # meters per pixel in x dimension, lane width is 12 ft = 3.7 meters
+    ym_per_pix = 12/720 # meters per pixel in y dimension, lane line is 10 ft = 3.048 meters
+    xm_per_pix = 3.7/900 # meters per pixel in x dimension, lane width is 12 ft = 3.7 meters
+    
     left_curverad, right_curverad, center_dist = (0, 0, 0)
     # Define y-value where we want radius of curvature
     # I'll choose the maximum y-value, corresponding to the bottom of the image
